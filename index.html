@@ -1,14 +1,50 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Repositorio de Herramientas</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herramientas Dev</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Herramientas Dev</h1>
+    <p>Un conjunto de utilidades creadas con Python, JavaScript y más.</p>
+  </header>
+
+  <section class="tools">
+
+    <div class="tool-card">
+      <h2>Calculadora PyScript</h2>
+      <p>Una calculadora básica hecha con Python directamente en el navegador.</p>
+      <button onclick="document.getElementById('py-calculadora').style.display='block'">Ver herramienta</button>
+      <div id="py-calculadora" style="margin-top:1rem; display:none;">
+        <py-script>
+          a = 5
+          b = 3
+          print(f"Resultado: {a + b}")
+        </py-script>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <h2>Contador JS</h2>
+      <p>Un pequeño contador hecho en JavaScript para practicar eventos DOM.</p>
+      <button onclick="incrementar()">+1</button>
+      <p id="contador">0</p>
+      <script>
+        let count = 0;
+        function incrementar() {
+          count++;
+          document.getElementById('contador').innerText = count;
+        }
+      </script>
+    </div>
+
+  </section>
+
+</body>
 </html>
