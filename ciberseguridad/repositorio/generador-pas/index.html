@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Contraseñas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: #333;
+    }
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    label {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+    }
+    input[type="number"] {
+      width: 60px;
+    }
+    button {
+      background: #4a4a8a;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+      width: 100%;
+    }
+    button:hover {
+      background: #373766;
+    }
+    .result {
+      margin-top: 1rem;
+      background: #eee;
+      padding: 0.8rem;
+      border-radius: 8px;
+      text-align: center;
+      font-family: monospace;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Generador de Contraseñas</h1>
+
+  <div class="container">
+    <label>
+      Longitud:
+      <input type="number" id="length" min="4" max="50" value="20">
+    </label>
+
+    <label>
+      <span>Incluir mayúsculas</span>
+      <input type="checkbox" id="uppercase" checked>
+    </label>
+
+    <label>
+      <span>Incluir minúsculas</span>
+      <input type="checkbox" id="lowercase" checked>
+    </label>
+
+    <label>
+      <span>Incluir números</span>
+      <input type="checkbox" id="numbers" checked>
+    </label>
+
+    <label>
+      <span>Incluir símbolos</span>
+      <input type="checkbox" id="symbols" checked>
+    </label>
+
+    <button onclick="generarPassword()">Generar contraseña</button>
+
+    <div class="result" id="resultado">Tu contraseña aparecerá aquí</div>
+  </div>
+
+  <script>
+    function generarPassword() {
+      const length = parseInt(document.getElementById('length').value);
+      const useUppercase = document.getElementById('uppercase').checked;
+      const useLowercase = document.getElementById('lowercase').checked;
+      const useNumbers = document.getElementById('numbers').checked;
+      const useSymbols = document.getElementById('symbols').checked;
+
+      const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      const lower = "abcdefghijklmnopqrstuvwxyz";
+      const numbers = "0123456789";
+      const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+
+      let chars = "";
+      if (useUppercase) chars += upper;
+      if (useLowercase) chars += lower;
+      if (useNumbers) chars += numbers;
+      if (useSymbols) chars += symbols;
+
+      if (chars.length === 0) {
+        document.getElementById('resultado').innerText = "Selecciona al menos un tipo de carácter.";
+        return;
+      }
+
+      let password = "";
+      for (let i = 0; i < length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+
+      document.getElementById('resultado').innerText = password;
+    }
+  </script>
+<a href="../../index.html">
+    <button style="padding: 0.6rem 1.2rem; background: #4a4a8a; color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 1rem;">
+      Volver
+    </button>
+</a>
+</body>
+</html>
