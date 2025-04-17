@@ -32,7 +32,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 1.5rem;
-    transition: transform 0.2s ease;
+    text-align: center;
+    transition: transform 0.3s ease;
   }
   
   .tool-card:hover {
@@ -61,6 +62,49 @@ body {
   }
   
   .tool-card button:hover {
+    background: #373766;
+  }
+
+  
+
+
+
+
+  .tool-card-index {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 30px 8px rgba(0,0,0,0.1);
+    padding: 1.0rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .tool-card-index:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tool-card-index h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.1rem;
+    color: #333;
+  }
+  
+  .tool-card-index p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .tool-card-index button {
+    background: #4a4a8a;
+    color: white;
+    border: none;
+    padding: 1rem 5rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .tool-card-index button:hover {
     background: #373766;
   }
   
