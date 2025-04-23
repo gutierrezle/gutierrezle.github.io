@@ -1,0 +1,47 @@
+🔧 Desarrollo Web
+    Descripción sugerida:
+    Herramientas útiles para desarrolladores frontend y backend, desde generadores de código hasta apps para probar componentes.
+
+    Ideas para agregar:
+
+        -Generador de tarjetas HTML/CSS – Una pequeña app para crear tarjetas personalizadas visualmente.(TERMINADO)
+
+        -Minificador de código – Para comprimir HTML, CSS o JS.
+
+        -Live Preview Editor – Un editor web que muestra en tiempo real cómo queda tu HTML+CSS.
+
+        -Conversor de colores – Hex ↔ RGB ↔ HSL.
+
+        -Plantillas base – Archivos base de proyectos HTML/CSS/JS o boilerplates de Flask/Express.
+
+🖥️ Infraestructura
+    Descripción sugerida:
+    Scripts y utilidades para gestionar servidores, redes y automatización de tareas.
+
+        Ideas para agregar:
+
+        -Generador de archivos docker-compose.yml – App que crea un archivo básico según los servicios que selecciones.
+
+        -Script para respaldos automáticos – En Bash o Python.
+
+        -Comprobador de puertos abiertos – Herramienta web que usa Python para hacer un socket check.
+
+        -Configurador de HAProxy – Mini form web que genera el archivo de config base.
+
+        -Panel de monitoreo simple – Usando Python (Flask) que muestre estado de servicios en red local.
+
+🔐 Ciberseguridad
+    Descripción sugerida:
+    Herramientas básicas para practicar o aplicar conceptos de seguridad informática, análisis y detección.
+
+        Ideas para agregar:
+
+        -Generador de contraseñas seguras – Con opciones para longitud, símbolos, etc.
+
+        -Hash calculator – Generar hash (MD5, SHA-1, SHA-256) de un texto.
+
+        -Validador de headers HTTP – Para verificar qué headers de seguridad tiene un sitio.
+
+        -Simulador de fuerza bruta – Con protección por delays, para ver cómo funciona.
+
+        -Checklist de seguridad web – Lista editable de buenas prácticas (XSS, CSRF, etc.).
