@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generador de Tarjetas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Generador de Tarjetas HTML/CSS</h1>
+    <p>Personaliza tu tarjeta y copia el código generado.</p>
+  </header>
+
+  <main>
+    <form id="cardForm">
+        <label>Título:
+          <input type="text" id="title" placeholder="Título de la tarjeta" required>
+        </label>
+        <label>Descripción:
+          <textarea id="description" placeholder="Descripción corta"></textarea>
+        </label>
+      
+        <div class="color-pickers">
+          <label>Color de fondo:
+            <input type="color" id="bgColor" value="#ffffff">
+          </label>
+          <label>Color del texto:
+            <input type="color" id="textColor" value="#000000">
+          </label>
+        </div>
+      
+        <button type="submit">Generar Tarjeta</button>
+      </form>
+
+      
+    <section id="preview">
+      <h2>Vista previa</h2>
+      <div id="cardPreview" class="card"></div>
+    </section>
+
+    <section id="preview">
+      <h2>Código generado</h2>
+      <textarea id="codeOutput" rows="10" readonly></textarea>
+    </section>
+  </main>
+
+  <script>
+    const form = document.getElementById('cardForm');
+    const preview = document.getElementById('cardPreview');
+    const codeOutput = document.getElementById('codeOutput');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const title = document.getElementById('title').value;
+      const description = document.getElementById('description').value;
+      const bgColor = document.getElementById('bgColor').value;
+      const textColor = document.getElementById('textColor').value;
+
+      const html = `
+<div class="card" style="background:${bgColor}; color:${textColor}; text-align: center;">
+  <h3>${title}</h3>
+  <p>${description}</p>
+</div>`.trim();
+
+      preview.innerHTML = html;
+      codeOutput.value = html;
+    });
+  </script>
+<script>
+    const bgColorInput = document.getElementById('bgColor');
+    const textColorInput = document.getElementById('textColor');
+  
+    bgColorInput.addEventListener('input', () => {
+      bgColorInput.style.backgroundColor = bgColorInput.value;
+    });
+  
+    textColorInput.addEventListener('input', () => {
+      textColorInput.style.backgroundColor = textColorInput.value;
+    });
+  </script>
+  
+</body>
+</html>
