@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generador Docker Compose</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Generador de docker-compose.yml</h1>
+  <p>Seleccioná los servicios que querés incluir:</p>
+
+  <form id="serviceForm">
+    <label><input type="checkbox" value="nginx"> Nginx</label><br>
+    <label><input type="checkbox" value="mysql"> MySQL</label><br>
+    <label><input type="checkbox" value="mongo"> MongoDB</label><br>
+    <label><input type="checkbox" value="redis"> Redis</label><br>
+    <label><input type="checkbox" value="node"> Node.js</label><br>
+    <label><input type="checkbox" value="flask"> Python (Flask)</label><br><br>
+
+    <button type="submit">Generar docker-compose.yml</button>
+  </form>
+
+  <h2>Vista previa:</h2>
+  <pre id="output"></pre>
+  <button id="downloadBtn" style="display:none;">Descargar archivo</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

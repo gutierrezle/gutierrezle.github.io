@@ -20,7 +20,7 @@
 
         Ideas para agregar:
 
-        -Generador de archivos docker-compose.yml – App que crea un archivo básico según los servicios que selecciones.
+        -Generador de archivos docker-compose.yml – App que crea un archivo básico según los servicios que selecciones.(TERMINADO)
 
         -Script para respaldos automáticos – En Bash o Python.
 
