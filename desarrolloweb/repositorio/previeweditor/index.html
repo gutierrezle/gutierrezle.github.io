@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live Preview Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Live Preview Editor</h1>
+
+    <div class="editor">
+      <div class="input-section">
+        <label for="htmlInput">HTML:</label>
+        <textarea id="htmlInput" placeholder="Escribe tu HTML aquí..."></textarea>
+
+        <label for="cssInput">CSS:</label>
+        <textarea id="cssInput" placeholder="Escribe tu CSS aquí..."></textarea>
+      </div>
+
+      <div class="preview-section">
+        <h2>Vista Previa</h2>
+        <iframe id="previewFrame"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="livepreview.js"></script>
+</body>
+</html>

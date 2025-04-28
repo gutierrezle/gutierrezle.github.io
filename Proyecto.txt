@@ -6,9 +6,7 @@
 
         -Generador de tarjetas HTML/CSS – Una pequeña app para crear tarjetas personalizadas visualmente.(TERMINADO)
 
-        -Minificador de código – Para comprimir HTML, CSS o JS.
-
-        -Live Preview Editor – Un editor web que muestra en tiempo real cómo queda tu HTML+CSS.
+        -Live Preview Editor – Un editor web que muestra en tiempo real cómo queda tu HTML+CSS.(TERMINADO)
 
         -Conversor de colores – Hex ↔ RGB ↔ HSL.
 
@@ -36,7 +34,7 @@
 
         Ideas para agregar:
 
-        -Generador de contraseñas seguras – Con opciones para longitud, símbolos, etc.
+        -Generador de contraseñas seguras – Con opciones para longitud, símbolos, etc.(TERMINADO)
 
         -Hash calculator – Generar hash (MD5, SHA-1, SHA-256) de un texto.
 
