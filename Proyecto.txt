@@ -20,7 +20,7 @@
 
         -Generador de archivos docker-compose.yml – App que crea un archivo básico según los servicios que selecciones.(TERMINADO)
 
-        -Script para respaldos automáticos – En Bash o Python.
+        -Script para respaldos automáticos – En Bash y Python.(TERMINADO)
 
         -Comprobador de puertos abiertos – Herramienta web que usa Python para hacer un socket check.
 
