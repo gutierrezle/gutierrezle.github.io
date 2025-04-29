@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scripts de Respaldo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Scripts de Respaldo Automático</h1>
+    <p>Visualizá o descargá los scripts que necesites para realizar copias de seguridad.</p>
+  </header>
+
+  <section class="scripts-list">
+    <div class="script-card">
+      <h2>Script en Python (.py)</h2>
+      <p>Crea un archivo comprimido `.tar.gz` de una carpeta seleccionada.</p>
+      <div class="buttons">
+        <a href="scripts/backup.py" download>
+          <button>Ver Script</button>
+        </a>
+      </div>
+      <pre id="python-script" class="script-content" hidden></pre>
+    </div>
+
+    <div class="script-card">
+      <h2>Script en Bash (.sh)</h2>
+      <p>Realiza un backup comprimido de una carpeta usando Bash y `tar`.</p>
+      <div class="buttons">
+        <a href="scripts/backup.py" download>
+          <button>Ver Script</button>
+        </a>
+      </div>
+      <pre id="bash-script" class="script-content" hidden></pre>
+    </div>
+  </section>
+
+  <a href="../../index.html">
+    <button class="volver">Volver al Inicio</button>
+  </a>  
+</body>
+</html>
