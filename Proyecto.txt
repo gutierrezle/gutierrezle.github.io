@@ -45,7 +45,7 @@
         -Checklist de seguridad web – Lista editable de buenas prácticas (XSS, CSRF, etc.).
 
 
-🔐 Otros
+🎯 Otros
     Descripción sugerida:
     Ideas para la web que no tengan que ver con el rubro pero que sirven para facilitar la navecacion u Otros
 
