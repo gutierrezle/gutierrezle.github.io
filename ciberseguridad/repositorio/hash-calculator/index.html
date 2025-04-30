@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hash Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hash Calculator</h1>
+
+  <textarea id="inputText" placeholder="Escribe el texto..."></textarea>
+
+  
+<div>
+  <select id="hashType">
+    <option value="md5">MD5</option>
+    <option value="sha1">SHA-1</option>
+    <option value="sha256">SHA-256</option>
+  </select>
+  <button onclick="generateHash()">Calcular Hash</button>
+</div>
+  
+
+  <div id="result">
+    <h3>Resultado:</h3>
+    <p id="hashOutput">...</p>
+  </div>
+
+  <script src="md5.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

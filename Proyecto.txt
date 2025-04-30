@@ -36,10 +36,24 @@
 
         -Generador de contraseñas seguras – Con opciones para longitud, símbolos, etc.(TERMINADO)
 
-        -Hash calculator – Generar hash (MD5, SHA-1, SHA-256) de un texto.
+        -Hash calculator – Generar hash (MD5, SHA-1, SHA-256) de un texto.(TERMINADO)
 
         -Validador de headers HTTP – Para verificar qué headers de seguridad tiene un sitio.
 
         -Simulador de fuerza bruta – Con protección por delays, para ver cómo funciona.
 
         -Checklist de seguridad web – Lista editable de buenas prácticas (XSS, CSRF, etc.).
+
+
+🔐 Otros
+    Descripción sugerida:
+    Ideas para la web que no tengan que ver con el rubro pero que sirven para facilitar la navecacion u Otros
+
+        Ideas para agregar:
+
+        -Favoritos – Agregar boton (estrella)para marcar como favorito y que se siruan primeros.(TERMINADO)
+
+        -Boton Info - Agregar un boton que sea de infomacion el mismo nos dara una explicacion de la utilidad que se le puede dar a la tarjeta
+
+        -Buscador – Agregar un buscador para simplifacar cuando las tarjetas del repositorio sean muchas
+
