@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    display: inline-block;
+    max-width: 400px;
+  }
+  
+  button {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    border: none;
+    background: #4a4a8a;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #3c3c6e;
+  }
+  
+  .stats p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .mensaje {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .mensaje.success {
+    color: green;
+  }
+  
+  .mensaje.fail {
+    color: red;
+  }
+  
+  .volver {
+    background: #666;
+    margin-top: 2rem;
+  }
+  
+  #mejorScore {
+    color: gold;
+    font-weight: bold;
+  }
+  
