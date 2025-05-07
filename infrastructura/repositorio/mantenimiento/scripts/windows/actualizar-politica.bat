@@ -1,0 +1,3 @@
+@echo
+gpupdate /force
+PAUSE

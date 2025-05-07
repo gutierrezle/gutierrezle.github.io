@@ -5,72 +5,77 @@
   <title>Scripts de Mantenimiento</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .card-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .card a {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+    }
+    .emoji {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>🛠️ Scripts de Mantenimiento y Limpieza</h1>
-
-    <section>
-      <h2>📺 Windows (.bat)</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>🧹 Limpiar Temporales</h3>
-          <a href="scripts/windows/limpiar_temp.bat" target="_blank">🔍 Ver script</a>
-          <a href="scripts/windows/limpiar_temp.rar" download>⬇️ Descargar</a>
-        </div>
-        <div class="card">
-          <h3>♻️ Vaciar Papelera</h3>
-          <a href="scripts/windows/vaciar_papelera.bat" target="_blank">🔍 Ver script</a>
-          <a href="scripts/windows/vaciar_papelera.rar" download>⬇️ Descargar</a>
-        </div>
-        <div class="card">
-          <h3>🧼 Limpiar Caché Chrome</h3>
-          <a href="scripts/windows/limpiar_cache_chrome.bat" target="_blank">🔍 Ver script</a>
-          <a href="scripts/windows/limpiar_cache_chrome.rar" download>⬇️ Descargar</a>
-        </div>
-        <div class="card">
-          <h3>⚙️ Verificar Disco</h3>
-          <a href="scripts/windows/verificar_disco.bat" target="_blank">🔍 Ver script</a>
-          <a href="scripts/windows/verificar_disco.rar" download>⬇️ Descargar</a>
-        </div>
-        <div class="card">
-          <h3>🔄 Buscar Actualizaciones</h3>
-          <a href="scripts/windows/buscar_actualizaciones.bat" target="_blank">🔍 Ver script</a>
-          <a href="scripts/windows/buscar_actualizaciones.rar" download>⬇️ Descargar</a>
-        </div>
+    <h1>🛠️ Scripts de Mantenimiento</h1>
+    <div class="card-grid">
+      <div class="card">
+        <div class="emoji">📺</div>
+        <h2>Windows</h2>
+        <a href="windows.html">Ver Scripts</a>
       </div>
-    </section>
-
-    <section>
-      <h2>🐧 Linux (.sh)</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>🧹 Limpiar Temporales</h3>
-          <a href="scripts/linux/limpiar_temp.sh" target="_blank">🔍 Ver script</a>
-          <a href="scripts/linux/limpiar_temp.rar" download>⬇️ Descargar</a>
-        </div>
-        <div class="card">
-          <h3>♻️ Vaciar Papelera</h3>
-          <a href="scripts/linux/vaciar_papelera.sh" target="_blank">🔍 Ver script</a>
-          <a href="scripts/linux/vaciar_papelera.rar" download>⬇️ Descargar</a>
-        </div>
-        <div class="card">
-          <h3>🧼 Limpiar Caché Chrome</h3>
-          <a href="scripts/linux/limpiar_cache_chrome.sh" target="_blank">🔍 Ver script</a>
-          <a href="scripts/linux/limpiar_cache_chrome.rar" download>⬇️ Descargar</a>
-        </div>
-        <div class="card">
-          <h3>⚙️ Verificar Disco</h3>
-          <a href="scripts/linux/verificar_disco.sh" target="_blank">🔍 Ver script</a>
-          <a href="scripts/linux/verificar_disco.rar" download>⬇️ Descargar</a>
-        </div>
-        <div class="card">
-          <h3>🛠️ Actualizar Sistema</h3>
-          <a href="scripts/linux/actualizar_sistema.sh" target="_blank">🔍 Ver script</a>
-          <a href="scripts/linux/actualizar_sistema.rar" download>⬇️ Descargar</a>
-        </div>
+      <div class="card">
+        <div class="emoji">🐧</div>
+        <h2>Linux</h2>
+        <a href="linux.html">Ver Scripts</a>
       </div>
-    </section>
+    </div>
   </div>
 </body>
 </html>

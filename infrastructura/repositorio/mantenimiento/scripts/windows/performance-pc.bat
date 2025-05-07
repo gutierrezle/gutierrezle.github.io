@@ -1,0 +1,3 @@
+@echo
+perfmon /rel
+PAUSE

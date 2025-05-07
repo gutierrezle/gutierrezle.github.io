@@ -1,0 +1,3 @@
+@echo
+mdsched.exe
+PAUSE

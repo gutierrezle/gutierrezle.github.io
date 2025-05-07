@@ -1,0 +1,3 @@
+@echo
+eventvwr.msc
+PAUSE
