@@ -1,145 +1,146 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f4f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-  }
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
   
-  header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
   
-  h1 {
-    font-size: 2.5rem;
-    color: #4a4a8a;
-  }
+h1 {
+  font-size: 2.5rem;
+  color: #4a4a8a;
+}
   
-  .tools {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 1000px;
-  }
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
   
-  .tool-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
+.tool-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
   
-  .tool-card:hover {
-    transform: translateY(-5px);
-  }
+.tool-card:hover {
+  transform: translateY(-5px);
+}
   
-  .tool-card h2 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
+.tool-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
   
-  .tool-card p {
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-    color: #666;
-  }
+.tool-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
   
-  .tool-card button {
-    background: #4a4a8a;
-    color: white;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+.tool-card button {
+  background: #4a4a8a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
   
-  .tool-card button:hover {
-    background: #373766;
-  }
+.tool-card button:hover {
+  background: #373766;
+}
 
-  .tool-card-index {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 30px 8px rgba(0,0,0,0.1);
-    padding: 1.0rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
+.tool-card-index {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 30px 8px rgba(0,0,0,0.1);
+  padding: 1.0rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
   
-  .tool-card-index:hover {
-    transform: translateY(-5px);
-  }
+.tool-card-index:hover {
+  transform: translateY(-5px);
+}
   
-  .tool-card-index h2 {
-    font-size: 1.3rem;
-    margin-bottom: 0.1rem;
-    color: #333;
-  }
+.tool-card-index h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.1rem;
+  color: #333;
+}
   
-  .tool-card-index p {
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-    color: #666;
-  }
+.tool-card-index p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
   
-  .tool-card-index button {
-    background: #4a4a8a;
-    color: white;
-    border: none;
-    padding: 1rem 5rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+.tool-card-index button {
+  background: #4a4a8a;
+  color: white;
+  border: none;
+  padding: 1rem 5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
   
-  .tool-card-index button:hover {
-    background: #373766;
-  }
+.tool-card-index button:hover {
+  background: #373766;
+}
    
-  .favorite {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    color: black;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-  .favorite.active {
-    color: gold;
-    text-shadow: 0 0 10px yellow; 
-  }
+.favorite.active {
+  color: gold;
+  text-shadow: 0 0 10px yellow; 
+}
 
-  .tool-card {
-    position: relative;
-  }
-  .floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #1e88e5;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 999;
-    transition: background-color 0.3s ease;
-  }
+.tool-card {
+  position: relative;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1e88e5;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
   
-  .floating-button:hover {
-    background-color: #1565c0;
-  }
+.floating-button:hover {
+  background-color: #1565c0;
+}
   
 .topright-about-button {
   position: fixed;
