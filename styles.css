@@ -141,3 +141,22 @@ body {
     background-color: #1565c0;
   }
   
+.topright-about-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff; /* Azul eléctrico */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.topright-about-button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
