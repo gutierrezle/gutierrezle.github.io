@@ -147,3 +147,17 @@ body.aboutme-body {
     transform: none;
   }
 }
+.job {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.job p {
+  margin: 5px 0;
+}
