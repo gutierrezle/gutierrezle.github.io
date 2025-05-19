@@ -9,11 +9,11 @@ body {
 
 /* ===== Header ===== */
 header {
-  background-color: #283593; /* azul oscuro */
+  background-color: rgb(33, 37, 41); /* azul oscuro */
   color: #f0f2f5;
   padding: 0.5rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(40, 53, 147, 0.3);
+  box-shadow: 0 4px 8px rgba(95, 95, 95, 0.3);
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: 1.5px;
@@ -23,7 +23,7 @@ header {
 h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #283593;
+  color: #000000;
   font-weight: 700;
 }
 
@@ -57,7 +57,7 @@ main {
   width: 100%;
   height: 380px; /* un poco más alto */
   border: none;
-  border-bottom: 2px solid #283593;
+  border-bottom: 2px solid #000000;
 }
 
 /* Contenido de la tarjeta */
@@ -72,7 +72,7 @@ main {
 .card-content h2 {
   margin: 0 0 0.75rem 0;
   font-size: 1.4rem;
-  color: #283593;
+  color: rgb(33, 37, 41);
   font-weight: 700;
 }
 
@@ -86,7 +86,7 @@ main {
 .card-content a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #3949ab; /* azul medio */
+  background-color: rgb(33, 37, 41); /* azul medio */
   font-weight: 600;
   padding: 12px 0;
   border-radius: 8px;
@@ -109,7 +109,7 @@ main {
   display: block;
   margin: 0 auto;
   padding: 12px 24px;
-  background-color: #3949ab;
+  background-color: #c22a2a;
   color: white;
   text-decoration: none;
   border-radius: 8px;
